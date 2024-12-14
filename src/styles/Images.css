@@ -1,0 +1,14 @@
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.images img {
+    width: 25vw;
+    height: 25vw;
+}
