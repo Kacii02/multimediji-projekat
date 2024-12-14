@@ -1,8 +1,9 @@
 import React from "react";
+import "./styles/Cover.css"
 
 const Cover = () => {
   return (
-    <div>
+    <div className="cover">
       <img
         src="https://www.cestujemtrekujem.com/wp-content/uploads/2018/11/P5138183_panorama_3-2.jpg"
         alt="Cover photo"

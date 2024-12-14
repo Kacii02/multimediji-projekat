@@ -1,0 +1,54 @@
+.collection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.2rem;
+  align-items: center;
+  max-width: 25vw;
+  margin: 1rem;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.collection p {
+  font-size: 0.8rem;
+}
+
+.collection img {
+  width: 25vw;
+  height: 25vw;
+  display: block;
+  object-fit: cover; /* Slika se lepo uklapa */
+}
+.overlay {
+  position: absolute;
+  bottom: 0; /* Overlay je pozicioniran na dno */
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Crna sa providnošću */
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box; /* Padding ne povećava veličinu */
+  text-align: left; /* Tekst poravnat levo */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin-top: 0.7rem;
+  }
+
+  .overlay button:hover {
+    background-color: #555;
+  }

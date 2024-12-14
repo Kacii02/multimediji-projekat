@@ -1,0 +1,7 @@
+.collections {
+    margin: 0 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
