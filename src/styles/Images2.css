@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .images {
+    column-count: 4; /* Broj kolona */
+    column-gap: 10px; /* Razmak između kolona */
+    padding: 10px;
+  }
+  
+  .images img {
+    width: 100%; /* Širina slike da stane u kolonu */
+    margin-bottom: 10px; /* Razmak između slika */
+    border-radius: 8px; /* Zaobljeni uglovi */
+    display: block;
+  }
+  
+  .images img:hover {
+    transform: scale(1.05); /* Efekat uvećanja na hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (max-width: 1200px) {
+    .images {
+      column-count: 3;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .images {
+      column-count: 2;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .images {
+      column-count: 1;
+    }
+  }
+  

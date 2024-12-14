@@ -52,3 +52,63 @@
   .overlay button:hover {
     background-color: #555;
   }
+
+  /* --- Responzivnost --- */
+
+/* Za srednje ekrane: tableti */
+@media (max-width: 768px) {
+    .collection {
+      max-width: 45vw; /* Veća širina za tablete */
+    }
+  
+    .collection img {
+      width: 45vw;
+      height: 45vw;
+    }
+  
+    .overlay {
+      padding: 0.8rem;
+    }
+  
+    .overlay h3 {
+      font-size: 0.9rem;
+    }
+  
+    .collection p {
+      font-size: 0.7rem;
+    }
+  
+    .overlay button {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  }
+  
+  /* Za manje ekrane: mobilni */
+  @media (max-width: 480px) {
+    .collection {
+      max-width: 90vw; /* Širina skoro cela širina ekrana */
+    }
+  
+    .collection img {
+      width: 90vw;
+      height: 90vw;
+    }
+  
+    .overlay {
+      padding: 0.5rem;
+    }
+  
+    .overlay h3 {
+      font-size: 0.8rem;
+    }
+  
+    .collection p {
+      font-size: 0.6rem;
+    }
+  
+    .overlay button {
+      font-size: 10px;
+      padding: 4px 8px;
+    }
+  }
