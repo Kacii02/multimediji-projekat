@@ -4,8 +4,8 @@ import "./styles/Cover.css";
 const Cover = ({ collection }) => {
   return (
     <div className="cover">
-      <img src={collection.imgSrc || "https://cdn.pixabay.com/photo/2016/09/22/10/44/banner-1686943_1280.jpg"} />
-      <h1>{collection.title}</h1>
+      <img src={collection.imgSrc || "https://png.pngtree.com/thumb_back/fh260/background/20210906/pngtree-technology-building-light-blue-banner-image_805810.jpg"} />
+      <h1>{collection.title || "Moje kolekcije"} </h1>
       <p>{collection.description}</p>
     </div>
   );

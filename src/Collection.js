@@ -14,6 +14,11 @@ const Collection = ({setCollection, inCollection}) => {
       description:inCollection.description
     }
     setCollection(collection);
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Dodaje animirani prelaz
+    });
   }
 
   return (

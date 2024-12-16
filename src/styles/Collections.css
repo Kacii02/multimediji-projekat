@@ -1,37 +1,41 @@
 .collections {
-    margin: 0 3.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap:2rem;
+  margin: 0 3.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #e1ffff; /* Svetlo siva pozadina */
+  border-radius: 10px; /* Zaobljeni uglovi */
+  padding: 2rem; /* Prostor unutar kolekcija */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.341); /* Blaga senka */
 }
 
 .collection-item {
-    flex: 1 1 calc(25% - 2rem); /* 4 elementa po redu */
-    max-width: calc(25% - 2rem);
-    box-sizing: border-box;
+  flex: 1 1 calc(25% - 2rem); /* 4 elementa po redu */
+  max-width: calc(25% - 2rem);
+  box-sizing: border-box;
+}
+
+/* Media Queries za responzivnost */
+@media (max-width: 1200px) {
+  .collection-item {
+    flex: 1 1 calc(33.33% - 2rem); /* 3 elementa po redu */
+    max-width: calc(33.33% - 2rem);
   }
-  
-  /* Media Queries za responzivnost */
-  @media (max-width: 1200px) {
-    .collection-item {
-      flex: 1 1 calc(33.33% - 2rem); /* 3 elementa po redu */
-      max-width: calc(33.33% - 2rem);
-    }
+}
+
+@media (max-width: 768px) {
+  .collection-item {
+    flex: 1 1 calc(50% - 2rem); /* 2 elementa po redu */
+    max-width: calc(50% - 2rem);
   }
-  
-  @media (max-width: 768px) {
-    .collection-item {
-      flex: 1 1 calc(50% - 2rem); /* 2 elementa po redu */
-      max-width: calc(50% - 2rem);
-    }
+}
+
+@media (max-width: 480px) {
+  .collection-item {
+    flex: 1 1 100%; /* 1 element po redu */
+    max-width: 100%;
   }
-  
-  @media (max-width: 480px) {
-    .collection-item {
-      flex: 1 1 100%; /* 1 element po redu */
-      max-width: 100%;
-    }
-  }
+}
