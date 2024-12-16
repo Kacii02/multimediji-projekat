@@ -1,3 +1,15 @@
-.cover p {
+/* .cover p {
     margin:0.2rem 10vw;
-}
+} */
+
+.cover {
+    width: 100%;
+  }
+  
+  .cover img {
+    width: 100%; /* Slika zauzima celu širinu ekrana */
+    height: 40vh; /* Visina slike je 40% visine ekrana */
+    object-fit: cover; /* Slika se skalira proporcionalno i popunjava prostor */
+    object-position: center; /* Poravnava sliku na sredinu */
+    display: block; /* Uklanja praznine ispod slike */
+  }

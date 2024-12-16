@@ -1,20 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles/Collection.css";
 
-const Collection = () => {
+const Collection = ({setCollection, inCollection}) => {
+
+  // let [imgSrc,setImgSrc] = useState("https://storage.googleapis.com/world-travel-guide/2024/08/Belgrade-Travel-Guide-Travel-S-Helper.jpg");
+  // let [title,setTitle] = useState("Hram Sv. Save");
+  // let [description, setDescription] = useState("Ovo je neki random opis za ovu random sliku i random kolekciju");
+
+  const handleCover = ()=> {
+    let collection = {
+      imgSrc:inCollection.coverImage,
+      title:inCollection.title,
+      description:inCollection.description
+    }
+    setCollection(collection);
+  }
+
   return (
     <div className="collection">
       <img
-        src="https://storage.googleapis.com/world-travel-guide/2024/08/Belgrade-Travel-Guide-Travel-S-Helper.jpg"
+        src={inCollection.coverImage}
         alt="Cover photo"
       />
       <div className="overlay">
-        <h3>Hram Sv. Save</h3>
+        <h3>{inCollection.title}</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
-          debitis quae laudantium, quia asperiores accusantium?
+          {inCollection.description}
         </p>
-        <button>Otvori</button>
+        <button onClick={handleCover}>Otvori</button>
       </div>
     </div>
   );

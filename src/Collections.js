@@ -1,15 +1,16 @@
-import React from 'react'
 import Collection from './Collection'
 import "./styles/Collections.css"
-
-const Collections = () => {
+import collectionsDB from "./database/collections.json"
+//jedan objekat iz niza objekata collectionsDB je inCollection
+const Collections = ({setCollection}) => {
+  
   return (
     <div className='collections'>
-      <Collection/>
-      <Collection/>
-      <Collection/>
-      <Collection/>
-      <Collection/>
+      {
+        collectionsDB.map((inCollection) => (
+          <Collection key={inCollection.title} setCollection={setCollection} inCollection={inCollection} />
+        ))
+      }
     </div>
   )
 }
